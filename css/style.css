@@ -1,0 +1,541 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.logo {
+    width: 40px;
+}
+
+/* -------------------- */
+/* Navbar Styling */
+.navbar {
+
+    background-color: #0200ff !important;
+    padding: 15px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white !important;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.navbar-brand:hover {
+    color: #f8f9fa !important;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    font-size: 1.2rem;
+    color: white !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+/* Navbar Active Link */
+.navbar-nav .nav-link.active {
+    margin-left: 5px;
+    color: rgb(0, 0, 0) !important;
+
+}
+
+/* Navbar Links Hover Effect */
+.navbar-nav .nav-link:hover {
+
+    color: rgb(204, 62, 62) !important;
+}
+
+/* Responsive Navbar Toggle Button */
+.navbar-toggler {
+    border: none;
+    background-color: white !important;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+    /* Makes icon white */
+}
+
+/* Dropdown Styling */
+.dropdown-menu {
+    background-color: white;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    font-size: 1rem;
+    color: #333 !important;
+}
+
+.dropdown-item:hover {
+    background-color: #007bff;
+    color: white !important;
+}
+
+/* ----------liste des produits---------- */
+.product-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+}
+
+/* ------------------ */
+
+/* nav front */
+/* Navbar Styling */
+.top {
+    background-color: #f6f6f6 !important;
+}
+
+.butt {
+    height: 50px !important;
+    width: 50px;
+}
+
+.forter {
+    background-color: #f6f6f6 !important;
+}
+
+.custom-navbar {
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Brand (Title) */
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Navbar Links */
+.nav-item-custom {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white !important;
+    margin-right: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.nav-item-custom:hover {
+    color: #ffcc00 !important;
+    transform: scale(1.1);
+}
+
+/* Navbar Toggle Button */
+.navbar-toggler {
+    border: none;
+    background: white;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+/* see style -----------------------*/
+
+/* ---------------seeeeeeeeee */
+/* Offcanvas Menu */
+.offcanvas {
+    background: linear-gradient(135deg, #007bff, #6610f2);
+    color: white;
+    padding: 20px;
+    width: 280px;
+}
+
+/* Offcanvas Title */
+.offcanvas-title {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #ffcc00;
+}
+
+/* Close Button */
+.offcanvas-header .close {
+    color: white;
+    font-size: 1.4rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+.offcanvas-header .close:hover {
+    transform: rotate(90deg);
+}
+
+/* Category List */
+.list-group {
+    background: transparent;
+    border: none;
+}
+
+/* Category Items */
+.list-group-item {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Category Links */
+.list-group-item a {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.list-group-item:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.list-group-item a:hover {
+    color: #11131d;
+}
+
+/*  ---------fin list cater*/
+
+/* ------------------------------ */
+/* Category Title Styling */
+.product-catego {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #007bff, #6610f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    padding: 8px 12px;
+    border-left: 4px solid #ffcc00;
+    margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.product-catego:hover {
+    color: #ffcc00;
+    text-shadow: 2px 2px 10px rgba(255, 204, 0, 0.5);
+}
+
+/* -------------------------- */
+.login-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add {
+
+    margin-left: 90px;
+}
+
+
+/*  */
+/* Conteneur pour aligner les boutons */
+.action-buttons {
+    display: flex;
+}
+
+/* Style des boutons */
+.action-buttons a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Bouton Modifier */
+.btn-modifier {
+    padding: 5px;
+    height: 30px;
+    color: rgb(16, 244, 31);
+    border: 2px solid transparent;
+}
+
+.btn-modifier:hover {
+
+    border-color: #003f7f;
+}
+
+/* Bouton Supprimer */
+#sup {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn-supprimer {
+    height: 30px;
+    color: rgb(237, 18, 18);
+    border: 2px solid transparent;
+    padding: 2px;
+}
+
+.btn-supprimer:hover {
+
+    border-color: #801f29;
+
+
+}
+
+/* Icônes */
+.action-buttons i {
+    font-size: 16px;
+}
+
+/* front les catégories. */
+.list {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-left: 40px;
+}
+
+
+
+.title_categorie {
+    width: 100%;
+    background-color: #608ce5;
+    padding: 10px;
+    border: solid 1px #608ce5;
+    border-radius: 30px;
+}
+
+
+
+/* page categorie: */
+.table-container {
+    padding: 20px;
+}
+
+/* Style du tableau */
+.table {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+}
+
+/* Style de l'en-tête du tableau */
+thead {
+    background: #007bff;
+    color: white;
+    font-weight: bold;
+}
+
+/* Style des cellules */
+th,
+td {
+    padding: 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Style des card */
+/* ------------------------------------ */
+#titr {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #2c3e50;
+    background: linear-gradient(to right, #007bff, #6610f2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 3px solid #007bff;
+    display: inline-block;
+}
+
+/* -------------------- */
+
+
+/* ------------------------------------------ */
+#title_c {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(to right, #ff7eb3, #ff758c, #ff7eb3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff758c;
+    display: inline-block;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* ---------------------------------------------- */
+
+
+
+
+
+
+/* ---------------------------------------------- */
+#prix_final {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    background: #f8f9fa;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+#prix_final:hover {
+    background: #e9ecef;
+}
+
+#prix_final .discount {
+    color: #28a745;
+    font-weight: bold;
+}
+
+/* .------------------------------------------------- */
+/* ------------------- */
+#disc {
+    height: 50px;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    padding: 5px;
+    border: #333 solid 1px;
+    border-radius: 50px;
+}
+
+
+
+#prix {
+    font-size: 1.5rem;
+    background: #e3f2fd;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+#description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+
+}
+
+#prix span {
+    color: #198754;
+    font-weight: bold;
+}
+
+#acheter {
+    margin-top: 10px;
+    background-color: #007bff;
+}
+
+/* ------------------------- */
+.counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#plus,
+#moin {
+    font-size: 1.5rem;
+    width: 40px;
+    height: 40px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+
+}
+
+
+#plus:hover,
+#moin:hover {
+    background-color: #218838;
+
+}
+
+
+#pl {
+    width: 80px;
+    height: 40px;
+    text-align: center;
+    font-size: 1.2rem;
+    border: 2px solid #28a745;
+    border-radius: 8px;
+    padding: 5px;
+    outline: none;
+    background-color: white;
+}
+
+#pl:focus {
+    border-color: #218838;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+}
+
+#crd_fo {
+    z-index: 10;
+}
+
+/* chane color style */
+/* -------------------------------------------------------- */
+/* modal categorie style */

@@ -1,0 +1,506 @@
+body {
+    min-height: 100px;
+}
+
+/*  */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/*  */
+
+.carousel-item img {
+    height: 500px;
+    width: 100% !important;
+    margin-top: 10px;
+}
+
+#cart1 {
+    font-size: 20px;
+    color: rgb(240, 234, 232);
+}
+
+.myico {
+    color: blue;
+    font-size: 30px;
+}
+
+/* ------------------------------------- */
+#panierBtn {
+    background-color: #ff69b4;
+    /* Lovely pink */
+    color: white;
+
+    border-radius: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.3);
+    /* Soft glow */
+    position: relative;
+    overflow: hidden;
+}
+
+#panierBtn::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    /* Slimmer, cuter underline */
+    background-color: white;
+    border-radius: 10px;
+    margin-top: 8px;
+    opacity: 0.8;
+    transition: transform 0.3s ease;
+    transform: scaleX(0);
+}
+
+#panierBtn:hover {
+    background-color: #ff85c1;
+    /* Lighter pink on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(255, 105, 180, 0.5);
+}
+
+#panierBtn:hover::after {
+    transform: scaleX(1);
+    /* Underline appears on hover */
+}
+
+#panierBtn i {
+    margin-right: 10px;
+    font-size: 18px;
+    color: #000000;
+}
+
+#panierBtn:hover {
+
+    transform: translateY(-3px);
+}
+
+#panierBtn:active {
+    transform: translateY(2px);
+    /* Slightly push the button down when clicked */
+}
+
+#total {
+    background-color: yellow;
+    margin-top: 20px;
+    color: #000000;
+    width: 20px;
+    height: 20px;
+    border: solid black 1px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+/* ------------------------- */
+.carousel-caption {
+    background-color: rgba(151, 194, 224, .6);
+    border-radius: 20px;
+    color: black;
+    font-size: 20px;
+    transition: .3s;
+    bottom: 100px;
+}
+
+.carousel-caption:hover {
+    background-color: rgba(151, 194, 224, .8);
+    cursor: pointer;
+}
+
+.btn-dark {
+    border-radius: 20px;
+}
+
+.btn-dark:hover {
+
+    background-color: rgb(124, 208, 34);
+    border-radius: 40px;
+    transition: ease all .3s;
+}
+
+.carousel-indicators {
+    color: brown;
+}
+
+.carousel-indicators button {
+    height: 20px !important;
+    width: 20px !important;
+    border-radius: 50% !important;
+    background-color: rgb(137, 236, 16) !important;
+    transition: .5s;
+
+}
+
+.carousel-indicators button:hover {
+    background-color: rgb(255, 106, 7) !important;
+
+}
+
+.fex {
+    position: fixed;
+}
+
+.custom-navbar {
+    background-color: #f6f6f6 !important;
+    padding: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles généraux */
+.container {
+    max-width: 1200px;
+    margin: auto;
+
+}
+
+h1.product-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Ligne de séparation stylisée */
+hr {
+    border: none;
+    height: 5px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    margin: 20px 0;
+}
+
+/* Style des cartes produits */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image des produits */
+.card img {
+
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    object-fit: cover;
+}
+
+/* Corps de la carte */
+.card-body {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Titre du produit */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Prix */
+.card-text {
+    font-size: 1rem;
+    color: #777;
+    font-weight: bold;
+}
+
+/* Date d'ajout */
+.card-text small {
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Bouton d'affichage des détails */
+.card-body .btn {
+    display: inline-block;
+    background: #ff7e5f;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.card-body .btn:hover {
+    background: #e76f51;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        margin: 15px auto;
+    }
+}
+
+/* seee style */
+
+#voir {
+    width: 250px;
+    background: linear-gradient(45deg, #060606, #fad0c4);
+    border: none;
+    padding: 12px 0px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 4px 10px rgba(255, 160, 180, 0.4);
+    text-decoration: none;
+    color: white;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+#voir:hover {
+    background: linear-gradient(45deg, #060606, #fad0c4, #060606);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 160, 180, 0.5);
+}
+
+#free {
+    font-size: 18px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#voir:hover #free {
+    transform: translateX(5px) rotate(15deg);
+}
+
+
+/* Modal Background */
+.modal-content {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: none;
+}
+
+/* Modal Header */
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e0e0e0;
+    border-radius: 12px 12px 0 0;
+}
+
+.modal-header .title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Close Button */
+.btn-close {
+    opacity: 0.7;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.btn-close:hover {
+    opacity: 1;
+    transform: rotate(90deg) scale(1.2);
+}
+
+.btn-close:active {
+    transform: scale(0.8);
+}
+
+.list-group-item {
+    background-color: #ffffff;
+    border: none;
+    padding: 12px 15px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.list-group-item a {
+    color: #444;
+    text-decoration: none;
+    display: block;
+    padding: 8px;
+    border-radius: 6px;
+    transition: background 0.3s ease-in-out;
+}
+
+.list-group-item:hover a {
+    background: #5288df;
+    color: #000;
+}
+
+.modal-footer {
+    background-color: #000000;
+    border-top: 2px solid #e0e0e0;
+    border-radius: 0 0 12px 12px;
+}
+
+.btn-secondary {
+    background-color: #000000;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 6px;
+    transition: background 0.3s;
+}
+
+.btn-secondary:hover {
+    background-color: #555;
+}
+
+/* ajouter steyle */
+.counter-moins,
+.counter-plus {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* Bouton rond */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.counter-moins:hover,
+.counter-plus:hover {
+    background: linear-gradient(135deg, #fad0c4, #ff9a9e);
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.counter-moins:active,
+.counter-plus:active {
+    transform: scale(0.9);
+}
+
+#ajouterbtn {
+    margin-left: 20px;
+    background: linear-gradient(135deg, #000000, #fad0c4);
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    /* Rounded corners */
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+#ajouterbtn:hover {
+    background: linear-gradient(135deg, #000000, #ff9a9e, rgb(0, 0, 0));
+    transform: scale(1.05);
+
+}
+
+
+.shops {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff7f50;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.shops:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+}
+
+.shops:focus,
+.shops:active {
+    outline: none;
+    background-color: #ff6347;
+}
+
+#modfier {
+    width: 50px;
+    height: 35px;
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+#modfier:focus {
+    outline: none;
+    border-color: #5cb85c;
+}
+
+#Mettre {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#Mettre:hover {
+    background-color: #4cae4c;
+    transform: scale(1.05);
+}
+
+#Mettre:active {
+    background-color: #3e8e41;
+    transform: scale(1);
+}
+
+input:focus,
+button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+
+/* panier php */
